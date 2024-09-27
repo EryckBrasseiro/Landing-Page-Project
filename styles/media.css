@@ -1,0 +1,45 @@
+@media screen and (max-width: 760px){ /*Diminuindo a largura da tela no mínimo 760px ele transforma a personalização original p/ esse arquivo*/
+    
+    body {
+        padding:0;
+    }
+
+    header {
+        flex-direction: column;
+        padding:0px;
+    }
+
+
+    li{
+        align-items:flex-start;
+        font-size: xx-small;
+    }
+
+    main {
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+
+    .newslatter{
+        font-size:10px;
+    }
+
+    form {
+        flex-wrap:wrap;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input {
+        align-self: center; /*Alinha ele mesmo no centro*/
+        width: 90%;
+    }
+
+    input [type="submit"] {
+        width: 70%;
+    }
+
+    img {
+        display: none;
+    }
+}

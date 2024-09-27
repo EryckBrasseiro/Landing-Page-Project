@@ -1,0 +1,121 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: poppinsregular; /*Baixar fonte no site dafont, precisa configurar no style da fonte usando o @font-face e nomeando a fonte em font-family*/
+    max-width: wrap; 
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    display: flex; /* Flexibiliza direções/ dimensões movimentando os elementos pela página*/
+    flex-direction: row; /*Row: linha horizontal da esquerda p/ direita; row-reverse; column; column-reverse*/
+    justify-content: space-between; /*between: espaça igualmente entre laterais e meio; around: espaça até as laterais*/
+    align-items: center; /*Alinha os itens*/
+    padding: 0 3%;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px; /*Junta o texto/Distância entre as linhas do texto*/
+}
+
+li{ /*Pega item a item dentro da div/ul */
+    display: inline-block; /* Deixa os itens em linha estáticos/bloqueados */
+    margin: 20px;
+    font-size: larger;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size:larger ;
+}
+
+a:hover { /* hover: insere/altera a personalização quando o mouse passa em cima*/
+    color: rgb(132,14,201);
+    transition: 0.3s all; /* Efeito de transição com um leve delay p/ TODOS os itens de a */
+}
+
+#inscreva {
+    border: 2px solid rgb(132,14,201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#increva:hover{
+    background-color: rgb(132,14,201);
+    color: white;
+}
+
+h1{
+    font-weight: 200; /*weight= peso; Nesse caso, deixa ela mais fina, quanto maior, mais grossa até chegar a bold=700*/
+    font-size: 60px;
+}
+
+main {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding: 20px 3%;
+}
+
+.newslatter {
+    line-height: 10px;
+    flex-wrap:wrap;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span {
+    color:rgb(132,14,201);
+}
+
+p {
+    line-height: 50px;
+    max-width: 80%;
+    font-family: poppinslight;
+    font-size: x-large;
+}
+
+article {
+    padding-right: 10%;
+}
+
+img {
+    width: 1000px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 30px;
+}
+
+form [type="submit"]{ /*Personaliza todos os form com o tipo submit*/
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132,14,201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{ 
+    cursor: pointer;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px; /*Aumenta o tamanho da altura do input */
+    padding: 15px;
+    border-radius: 20px;
+    border: none; /*Remove a borda*/
+    font-size: 15px;
+}
+
